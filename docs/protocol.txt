@@ -1,0 +1,8 @@
+Request:
+  uint32_be sql_size
+  bytes     sql_utf8
+
+Response:
+  uint32_be status      # 0 ok, 1 error
+  uint32_be json_size
+  bytes     json_utf8

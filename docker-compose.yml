@@ -1,0 +1,9 @@
+services:
+  db-server:
+    build: .
+    image: databaseoficial-customdb-server:latest
+    container_name: customdb-server
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/app/data

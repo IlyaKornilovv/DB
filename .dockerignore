@@ -1,0 +1,24 @@
+# Local/host build artifacts must not be copied into Docker image
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+# Published binaries and runtime data
+bin/
+publish/
+data/
+*.db
+*.sqlite
+
+# GUI build artifacts
+src/gui/bin/
+src/gui/obj/
+.vs/
+
+# VCS and archives
+.git/
+.gitignore
+*.zip
